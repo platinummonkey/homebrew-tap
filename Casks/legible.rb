@@ -3,7 +3,7 @@ cask "legible" do
   name "legible"
   desc "Sync documents from reMarkable tablet with OCR text layer generation"
   homepage "https://github.com/platinummonkey/legible"
-  version "1.0.5"
+  version "1.1.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "legible" do
   on_macos do
     on_intel do
       url "https://github.com/platinummonkey/legible/releases/download/v#{version}/legible_#{version}_darwin_x86_64.tar.gz"
-      sha256 "b2668f5f6414d92ce9f5f85cd331e6bc31e3f7171eb3b899ba882ec8ab59e3ad"
+      sha256 "509cf9de4c0b15d61a468e5e2978aaf4058ee5ad30f2c4c134487b0af609e104"
     end
     on_arm do
       url "https://github.com/platinummonkey/legible/releases/download/v#{version}/legible_#{version}_darwin_arm64.tar.gz"
-      sha256 "6bdd484984d3ee4061f35d37e55a8202475d93490e70c74f6729e92319d288e8"
+      sha256 "18284d2677c7138bdbeada4c6291ba1c803a05381c09d461dfea12af0ed1d5ce"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/platinummonkey/legible/releases/download/v#{version}/legible_#{version}_linux_x86_64.tar.gz"
-      sha256 "00ed285d35a44bf747fc957edbfb374b6ad86224f2541cae11aac76745866b7e"
+      sha256 "f5bce6360201dc9897e6000f39e89effc0e86afe935cd4d7c66dc94044170ab8"
     end
     on_arm do
       url "https://github.com/platinummonkey/legible/releases/download/v#{version}/legible_#{version}_linux_arm64.tar.gz"
-      sha256 "28913857810fe2e831841c1e7e196f13e3fd9c499d3805313f0e58ceb7c3dd78"
+      sha256 "4d08fc5e3c2dc0f847f0ac9f63fc3b22668312e5fb3f46cf389ab4ddb7a88ab3"
     end
   end
 
