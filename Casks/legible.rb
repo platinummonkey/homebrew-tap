@@ -33,9 +33,11 @@ cask "legible" do
     end
   end
 
-  postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/legible"]
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr",
+          args:           ["-dr", "com.apple.quarantine", "{{staged_path}}/legible"],
+          writable_paths: ["legible"]
     end
   end
 
